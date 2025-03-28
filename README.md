@@ -48,9 +48,9 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
   <source src="./TP2/FrozenLake.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-
+TP2/ForzenLake.png
 ### Results
-![FrozenLake Results](./TP2/FrozenLake.png)
+![FrozenLake Results](./TP2/ForzenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
