@@ -101,6 +101,7 @@ flowchart TB
 
 ---
 
+
 ## TP3: Q-Learning vs SARSA
 
 ### Description
@@ -110,20 +111,22 @@ Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` env
 
 ```mermaid
 flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A[Set Up Environment] --> B[Initialize Q-Table]
-    end
+    Init[1️⃣ Initialization]
+    Init --> A[Set Up Environment]
+    Init --> B[Initialize Q-Table]
 
-    subgraph Training["2️⃣ Training"]
-        C[Select Action] --> D[Take Action]
-        D --> E[Observe Reward]
-        E --> F[Update Q-Table (Q-Learning)] --> G[Update Q-Table (SARSA)]
-    end
+    Training[2️⃣ Training]
+    Training --> C[Select Action]
+    Training --> D[Take Action]
+    Training --> E[Observe Reward]
+    Training --> F[Update Q-Table (Q-Learning)]
+    Training --> G[Update Q-Table (SARSA)]
 
-    subgraph Evaluation["3️⃣ Evaluation"]
-        H[Test Trained Agent (Q-Learning)] --> I[Record Performance (Q-Learning)]
-        J[Test Trained Agent (SARSA)] --> K[Record Performance (SARSA)]
-    end
+    Evaluation[3️⃣ Evaluation]
+    Evaluation --> H[Test Trained Agent (Q-Learning)]
+    Evaluation --> I[Record Performance (Q-Learning)]
+    Evaluation --> J[Test Trained Agent (SARSA)]
+    Evaluation --> K[Record Performance (SARSA)]
 ```
 
 ### Results
@@ -145,19 +148,19 @@ Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `
 
 ```mermaid
 flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A[Set Up Environment] --> B[Initialize Policy and Value Tables]
-    end
+    Init[1️⃣ Initialization]
+    Init --> A[Set Up Environment]
+    Init --> B[Initialize Policy and Value Tables]
 
-    subgraph Training["2️⃣ Training"]
-        C[Select Action] --> D[Take Action]
-        D --> E[Observe Reward]
-        E --> F[Update Policy and Value Tables (PPO)]
-    end
+    Training[2️⃣ Training]
+    Training --> C[Select Action]
+    Training --> D[Take Action]
+    Training --> E[Observe Reward]
+    Training --> F[Update Policy and Value Tables (PPO)]
 
-    subgraph Evaluation["3️⃣ Evaluation"]
-        G[Test Trained Agent] --> H[Record Performance]
-    end
+    Evaluation[3️⃣ Evaluation]
+    Evaluation --> G[Test Trained Agent]
+    Evaluation --> H[Record Performance]
 ```
 
 ### Video Demonstration
