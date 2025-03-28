@@ -111,36 +111,36 @@ Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` env
 
 ```mermaid
 flowchart TB
-    Init[1️⃣ Initialization]
-    A[Set Up Environment]
-    B[Initialize Q-Table]
+    Init1[1️⃣ Initialization]
+    A1[Set Up Environment]
+    B1[Initialize Q-Table]
 
-    Init --> A
-    Init --> B
+    Init1 --> A1
+    Init1 --> B1
 
-    Training[2️⃣ Training]
-    C[Select Action]
-    D[Take Action]
-    E[Observe Reward]
-    F[Update Q-Table (Q-Learning)]
-    G[Update Q-Table (SARSA)]
+    Training1[2️⃣ Training]
+    C1[Select Action]
+    D1[Take Action]
+    E1[Observe Reward]
+    F1[Update Q-Table (Q-Learning)]
+    G1[Update Q-Table (SARSA)]
 
-    Training --> C
-    C --> D
-    D --> E
-    E --> F
-    E --> G
+    Training1 --> C1
+    C1 --> D1
+    D1 --> E1
+    E1 --> F1
+    E1 --> G1
 
-    Evaluation[3️⃣ Evaluation]
-    H[Test Trained Agent (Q-Learning)]
-    I[Record Performance (Q-Learning)]
-    J[Test Trained Agent (SARSA)]
-    K[Record Performance (SARSA)]
+    Evaluation1[3️⃣ Evaluation]
+    H1[Test Trained Agent (Q-Learning)]
+    I1[Record Performance (Q-Learning)]
+    J1[Test Trained Agent (SARSA)]
+    K1[Record Performance (SARSA)]
 
-    Evaluation --> H
-    Evaluation --> I
-    Evaluation --> J
-    Evaluation --> K
+    Evaluation1 --> H1
+    Evaluation1 --> I1
+    Evaluation1 --> J1
+    Evaluation1 --> K1
 ```
 
 ### Results
@@ -162,30 +162,30 @@ Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `
 
 ```mermaid
 flowchart TB
-    Init[1️⃣ Initialization]
-    A[Set Up Environment]
-    B[Initialize Policy and Value Tables]
+    Init2[1️⃣ Initialization]
+    A2[Set Up Environment]
+    B2[Initialize Policy and Value Tables]
 
-    Init --> A
-    Init --> B
+    Init2 --> A2
+    Init2 --> B2
 
-    Training[2️⃣ Training]
-    C[Select Action]
-    D[Take Action]
-    E[Observe Reward]
-    F[Update Policy and Value Tables (PPO)]
+    Training2[2️⃣ Training]
+    C2[Select Action]
+    D2[Take Action]
+    E2[Observe Reward]
+    F2[Update Policy and Value Tables (PPO)]
 
-    Training --> C
-    C --> D
-    D --> E
-    E --> F
+    Training2 --> C2
+    C2 --> D2
+    D2 --> E2
+    E2 --> F2
 
-    Evaluation[3️⃣ Evaluation]
-    G[Test Trained Agent]
-    H[Record Performance]
+    Evaluation2[3️⃣ Evaluation]
+    G2[Test Trained Agent]
+    H2[Record Performance]
 
-    Evaluation --> G
-    Evaluation --> H
+    Evaluation2 --> G2
+    Evaluation2 --> H2
 ```
 
 ### Video Demonstration
