@@ -50,7 +50,7 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 </video>
 TP2/ForzenLake.png
 ### Results
-![FrozenLake Results](./TP2/ForzenLake.png)
+![FrozenLake Results](./TP2/FrozenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
