@@ -31,28 +31,25 @@ Introduction to reinforcement learning concepts using the `CartPole-v1` environm
 ```mermaid
 flowchart TB
     subgraph Init["1️⃣ Initialization"]
-        A[Set Up Environment] --> B[Initialize Q-Table]
+        A["Set Up Environment"] --> B["Initialize Q-Table"]
     end
 
     subgraph Training["2️⃣ Training"]
-        C[Select Action] --> D[Take Action]
-        D --> E[Observe Reward]
-        E --> F[Update Q-Table]
+        C["Select Action"] --> D["Take Action"]
+        D --> E["Observe Reward"]
+        E --> F["Update Q-Table"]
     end
 
     subgraph Evaluation["3️⃣ Evaluation"]
-        G[Test Trained Agent] --> H[Record Performance]
+        G["Test Trained Agent"] --> H["Record Performance"]
     end
 ```
 
 ### Video Demonstration
-<video controls>
-  <source src="./TP1/CartPole-v1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+A video demonstrating the CartPole-v1 environment is available at: [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
 
 ### Results
-![CartPole Results](./TP1/CartPole.png)
+Results visualization is available at: [CartPole.png](./TP1/CartPole.png)
 
 ### Files
 - [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
@@ -71,28 +68,25 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 ```mermaid
 flowchart TB
     subgraph Init["1️⃣ Initialization"]
-        A[Set Up Environment] --> B[Initialize Q-Table]
+        A["Set Up Environment"] --> B["Initialize Q-Table"]
     end
 
     subgraph Training["2️⃣ Training"]
-        C[Select Action] --> D[Take Action]
-        D --> E[Observe Reward]
-        E --> F[Update Q-Table]
+        C["Select Action"] --> D["Take Action"]
+        D --> E["Observe Reward"]
+        E --> F["Update Q-Table"]
     end
 
     subgraph Evaluation["3️⃣ Evaluation"]
-        G[Test Trained Agent] --> H[Record Performance]
+        G["Test Trained Agent"] --> H["Record Performance"]
     end
 ```
 
 ### Video Demonstration
-<video controls>
-  <source src="./TP2/FrozenLake.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+A video demonstrating the FrozenLake environment is available at: [FrozenLake.mp4](./TP2/FrozenLake.mp4)
 
 ### Results
-![FrozenLake Results](./TP2/FrozenLake.png)
+Results visualization is available at: [FrozenLake.png](./TP2/FrozenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
@@ -100,7 +94,6 @@ flowchart TB
 - [TP2.ipynb](./TP2/TP2.ipynb)
 
 ---
-
 
 ## TP3: Q-Learning vs SARSA
 
@@ -111,40 +104,29 @@ Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` env
 
 ```mermaid
 flowchart TB
-    Init1[1️⃣ Initialization]
-    A1[Set Up Environment]
-    B1[Initialize Q-Table]
+    subgraph Init["1️⃣ Initialization"]
+        A["Set Up Environment"]
+        B["Initialize Q-Table"]
+    end
 
-    Init1 --> A1
-    Init1 --> B1
+    subgraph Training["2️⃣ Training"]
+        C["Select Action"]
+        D["Take Action"]
+        E["Observe Reward"]
+        F["Update Q-Table (Q-Learning)"]
+        G["Update Q-Table (SARSA)"]
+    end
 
-    Training1[2️⃣ Training]
-    C1[Select Action]
-    D1[Take Action]
-    E1[Observe Reward]
-    F1[Update Q-Table (Q-Learning)]
-    G1[Update Q-Table (SARSA)]
-
-    Training1 --> C1
-    C1 --> D1
-    D1 --> E1
-    E1 --> F1
-    E1 --> G1
-
-    Evaluation1[3️⃣ Evaluation]
-    H1[Test Trained Agent (Q-Learning)]
-    I1[Record Performance (Q-Learning)]
-    J1[Test Trained Agent (SARSA)]
-    K1[Record Performance (SARSA)]
-
-    Evaluation1 --> H1
-    Evaluation1 --> I1
-    Evaluation1 --> J1
-    Evaluation1 --> K1
+    subgraph Evaluation["3️⃣ Evaluation"]
+        H["Test Trained Agent (Q-Learning)"]
+        I["Record Performance (Q-Learning)"]
+        J["Test Trained Agent (SARSA)"]
+        K["Record Performance (SARSA)"]
+    end
 ```
 
 ### Results
-![Q-Learning vs SARSA Results](./TP3/qlearning_vs_sarsa.png)
+Comparison visualization is available at: [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
 
 ### Files
 - [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
@@ -162,46 +144,34 @@ Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `
 
 ```mermaid
 flowchart TB
-    Init2[1️⃣ Initialization]
-    A2[Set Up Environment]
-    B2[Initialize Policy and Value Tables]
+    subgraph Init["1️⃣ Initialization"]
+        A["Set Up Environment"]
+        B["Initialize Policy and Value Tables"]
+    end
 
-    Init2 --> A2
-    Init2 --> B2
+    subgraph Training["2️⃣ Training"]
+        C["Select Action"]
+        D["Take Action"]
+        E["Observe Reward"]
+        F["Update Policy and Value Tables (PPO)"]
+    end
 
-    Training2[2️⃣ Training]
-    C2[Select Action]
-    D2[Take Action]
-    E2[Observe Reward]
-    F2[Update Policy and Value Tables (PPO)]
-
-    Training2 --> C2
-    C2 --> D2
-    D2 --> E2
-    E2 --> F2
-
-    Evaluation2[3️⃣ Evaluation]
-    G2[Test Trained Agent]
-    H2[Record Performance]
-
-    Evaluation2 --> G2
-    Evaluation2 --> H2
+    subgraph Evaluation["3️⃣ Evaluation"]
+        G["Test Trained Agent"]
+        H["Record Performance"]
+    end
 ```
 
 ### Video Demonstration
-<video controls>
-  <source src="./TP4/Taxi-v3.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+A video demonstrating the Taxi-v3 environment is available at: [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
 
 ### Results
-![Taxi Results](./TP4/Taxi.png)
+Results visualization is available at: [Taxi.png](./TP4/Taxi.png)
 
 ### Files
 - [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
 - [Taxi.png](./TP4/Taxi.png)
 - [TP4.ipynb](./TP4/TP4.ipynb)
-
 
 ---
 
