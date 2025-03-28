@@ -1,8 +1,3 @@
-Sure, I'll incorporate your name, school, professor's name, and the contact information into the README file. Here's the updated version:
-
-### README.md
-
-```markdown
 # Machine Learning 2 - Reinforcement Learning Labs and Homework
 
 This repository contains the labs and homework assignments for the Machine Learning 2 course, focusing on Reinforcement Learning. Each lab includes a Jupyter Notebook with detailed code, explanations, and results. Additionally, each lab has a video demonstration of the environment and the agent's performance.
@@ -118,4 +113,3 @@ For any questions or feedback, please contact Oussama ELHADJI at [oussousselhadj
 - **Name**: Oussama ELHADJI
 - **School**: École Nationale de l'Intelligence Artificielle et du Digital Berkane
 - **Professor**: Mohamed Khalifa BOUTAHIR
-```
