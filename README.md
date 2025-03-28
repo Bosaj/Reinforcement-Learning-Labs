@@ -1,14 +1,14 @@
 # Machine Learning 2 - Reinforcement Learning Labs and Homework
 
-This repository contains the labs and homework assignments for the Machine Learning 2 course, focusing on Reinforcement Learning. Each lab includes a Jupyter Notebook with detailed code, explanations, and results. Additionally, each lab has a video demonstration of the environment and the agent's performance.
+This repository contains the labs and homework assignments for the **Machine Learning 2** course, focusing on **Reinforcement Learning**. Each lab includes a Jupyter Notebook with detailed code, explanations, and results. Additionally, each lab has a video demonstration of the environment and the agent's performance.
 
 ## Table of Contents
 
 1. [HomeWork](#homework)
-2. [TP1: CartPole-v1](#tp1)
-3. [TP2: FrozenLake-v1](#tp2)
-4. [TP3: Q-Learning vs SARSA](#tp3)
-5. [TP4: Taxi-v3](#tp4)
+2. [TP1: CartPole-v1](#tp1-cartpole-v1)
+3. [TP2: FrozenLake-v1](#tp2-frozenlake-v1)
+4. [TP3: Q-Learning vs SARSA](#tp3-q-learning-vs-sarsa)
+5. [TP4: Taxi-v3](#tp4-taxi-v3)
 
 ## HomeWork
 
@@ -18,6 +18,8 @@ The HomeWork section contains practice and introductory exercises for the Reinfo
 ### Files
 - [HomeWork.py](./HomeWork/HomeWork.py)
 - [HomeWorkAnimation.py](./HomeWork/HomeWorkAnimation.py)
+
+---
 
 ## TP1: CartPole-v1
 
@@ -57,6 +59,8 @@ flowchart TB
 - [CartPole.png](./TP1/CartPole.png)
 - [TP1.ipynb](./TP1/TP1.ipynb)
 
+---
+
 ## TP2: FrozenLake-v1
 
 ### Description
@@ -95,10 +99,12 @@ flowchart TB
 - [FrozenLake.png](./TP2/FrozenLake.png)
 - [TP2.ipynb](./TP2/TP2.ipynb)
 
+---
+
 ## TP3: Q-Learning vs SARSA
 
 ### Description
-Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment.
+Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` environment.
 
 ### Workflow Overview
 
@@ -111,8 +117,7 @@ flowchart TB
     subgraph Training["2️⃣ Training"]
         C[Select Action] --> D[Take Action]
         D --> E[Observe Reward]
-        E --> F[Update Q-Table (Q-Learning)]
-        E --> G[Update Q-Table (SARSA)]
+        E --> F[Update Q-Table (Q-Learning)] --> G[Update Q-Table (SARSA)]
     end
 
     subgraph Evaluation["3️⃣ Evaluation"]
@@ -129,10 +134,12 @@ flowchart TB
 - [TP3.ipynb](./TP3/TP3.ipynb)
 - [traffic_env.py](./TP3/traffic_env.py)
 
+---
+
 ## TP4: Taxi-v3
 
 ### Description
-Implementing the PPO algorithm to solve the `Taxi-v3` environment.
+Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `Taxi-v3` environment.
 
 ### Workflow Overview
 
@@ -167,6 +174,8 @@ flowchart TB
 - [Taxi.png](./TP4/Taxi.png)
 - [TP4.ipynb](./TP4/TP4.ipynb)
 
+---
+
 ## Usage
 
 To run the labs and homework, follow these steps:
@@ -183,17 +192,25 @@ To run the labs and homework, follow these steps:
 
 3. Open the Jupyter Notebook for each lab and run the cells.
 
+---
+
 ## Contributing
 
 Feel free to contribute to this repository by submitting pull requests or opening issues.
+
+---
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## Contact
 
 For any questions or feedback, please contact Oussama ELHADJI at [oussousselhadji@gmail.com](mailto:oussousselhadji@gmail.com).
+
+---
 
 ## Author
 
