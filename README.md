@@ -46,10 +46,13 @@ flowchart TB
 ```
 
 ### Video Demonstration
-A video demonstrating the CartPole-v1 environment is available at: [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
+<video controls>
+  <source src="./TP1/CartPole-v1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-Results visualization is available at: [CartPole.png](./TP1/CartPole.png)
+![CartPole Results](./TP1/CartPole.png)
 
 ### Files
 - [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
@@ -83,10 +86,13 @@ flowchart TB
 ```
 
 ### Video Demonstration
-A video demonstrating the FrozenLake environment is available at: [FrozenLake.mp4](./TP2/FrozenLake.mp4)
+<video controls>
+  <source src="./TP2/FrozenLake.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-Results visualization is available at: [FrozenLake.png](./TP2/FrozenLake.png)
+![FrozenLake Results](./TP2/FrozenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
@@ -126,7 +132,7 @@ flowchart TB
 ```
 
 ### Results
-Comparison visualization is available at: [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
+![Q-Learning vs SARSA Results](./TP3/qlearning_vs_sarsa.png)
 
 ### Files
 - [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
@@ -163,10 +169,13 @@ flowchart TB
 ```
 
 ### Video Demonstration
-A video demonstrating the Taxi-v3 environment is available at: [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
+<video controls>
+  <source src="./TP4/Taxi-v3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-Results visualization is available at: [Taxi.png](./TP4/Taxi.png)
+![Taxi Results](./TP4/Taxi.png)
 
 ### Files
 - [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
