@@ -126,10 +126,10 @@ flowchart TB
     G[Update Q-Table (SARSA)]
 
     Training --> C
-    Training --> D
-    Training --> E
-    Training --> F
-    Training --> G
+    C --> D
+    D --> E
+    E --> F
+    E --> G
 
     Evaluation[3️⃣ Evaluation]
     H[Test Trained Agent (Q-Learning)]
@@ -176,9 +176,9 @@ flowchart TB
     F[Update Policy and Value Tables (PPO)]
 
     Training --> C
-    Training --> D
-    Training --> E
-    Training --> F
+    C --> D
+    D --> E
+    E --> F
 
     Evaluation[3️⃣ Evaluation]
     G[Test Trained Agent]
