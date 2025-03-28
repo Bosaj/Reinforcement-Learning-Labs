@@ -1,3 +1,8 @@
+Sure, I'll incorporate your name, school, professor's name, and the contact information into the README file. Here's the updated version:
+
+### README.md
+
+```markdown
 # Machine Learning 2 - Reinforcement Learning Labs and Homework
 
 This repository contains the labs and homework assignments for the Machine Learning 2 course, focusing on Reinforcement Learning. Each lab includes a Jupyter Notebook with detailed code, explanations, and results. Additionally, each lab has a video demonstration of the environment and the agent's performance.
@@ -13,18 +18,7 @@ This repository contains the labs and homework assignments for the Machine Learn
 ## HomeWork
 
 ### Description
-Exploring advanced topics in reinforcement learning, including deep reinforcement learning techniques.
-
-### Video Demonstration
-[![HomeWork Video](./HomeWork/HomeWork.mp4)](./HomeWork/HomeWork.mp4)
-
-### Code Structure
-- **Initialization**: Setting up the environment and initializing the neural network.
-- **Training**: Implementing advanced reinforcement learning algorithms.
-- **Evaluation**: Testing the trained agent.
-
-### Results
-- **Graphs**: [Link to graphs](./HomeWork/)
+The HomeWork section contains practice and introductory exercises for the Reinforcement Learning course. These exercises are designed to familiarize students with classic RL concepts using Python.
 
 ### Files
 - [HomeWork.py](./HomeWork/HomeWork.py)
@@ -38,16 +32,12 @@ Introduction to reinforcement learning concepts using the `CartPole-v1` environm
 ### Video Demonstration
 [![TP1 Video](./TP1/CartPole-v1.mp4)](./TP1/CartPole-v1.mp4)
 
-### Code Structure
-- **Initialization**: Setting up the environment and initializing the Q-table.
-- **Training**: Implementing the Q-learning algorithm.
-- **Evaluation**: Testing the trained agent.
-
 ### Results
-- **Graphs**: [Link to graphs](./TP1/)
+- **Graphs**: [Link to graphs](./TP1/CartPole.png)
 
 ### Files
 - [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
+- [CartPole.png](./TP1/CartPole.png)
 - [TP1.ipynb](./TP1/TP1.ipynb)
 
 ## TP2: FrozenLake-v1
@@ -58,16 +48,12 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 ### Video Demonstration
 [![TP2 Video](./TP2/FrozenLake.mp4)](./TP2/FrozenLake.mp4)
 
-### Code Structure
-- **Initialization**: Setting up the environment and initializing the Q-table.
-- **Training**: Implementing the Q-learning algorithm.
-- **Evaluation**: Testing the trained agent.
-
 ### Results
-- **Graphs**: [Link to graphs](./TP2/)
+- **Graphs**: [Link to graphs](./TP2/FrozenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
+- [FrozenLake.png](./TP2/FrozenLake.png)
 - [TP2.ipynb](./TP2/TP2.ipynb)
 
 ## TP3: Q-Learning vs SARSA
@@ -75,16 +61,8 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 ### Description
 Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment.
 
-### Video Demonstration
-[![TP3 Video](./TP3/qlearning_vs_sarsa.png)](./TP3/qlearning_vs_sarsa.png)
-
-### Code Structure
-- **Initialization**: Setting up the environment and initializing the policy network.
-- **Training**: Implementing the Q-learning and SARSA algorithms.
-- **Evaluation**: Testing the trained agent.
-
 ### Results
-- **Graphs**: [Link to graphs](./TP3/)
+- **Graphs**: [Link to graphs](./TP3/qlearning_vs_sarsa.png)
 
 ### Files
 - [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
@@ -99,16 +77,12 @@ Implementing the PPO algorithm to solve the `Taxi-v3` environment.
 ### Video Demonstration
 [![TP4 Video](./TP4/Taxi-v3.mp4)](./TP4/Taxi-v3.mp4)
 
-### Code Structure
-- **Initialization**: Setting up the environment and initializing the policy and value tables.
-- **Training**: Implementing the PPO algorithm.
-- **Evaluation**: Testing the trained agent.
-
 ### Results
-- **Graphs**: [Link to graphs](./TP4/)
+- **Graphs**: [Link to graphs](./TP4/Taxi.png)
 
 ### Files
 - [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
+- [Taxi.png](./TP4/Taxi.png)
 - [TP4.ipynb](./TP4/TP4.ipynb)
 
 ## Usage
@@ -118,3 +92,30 @@ To run the labs and homework, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install gymnasium numpy matplotlib
+   ```
+
+3. Open the Jupyter Notebook for each lab and run the cells.
+
+## Contributing
+
+Feel free to contribute to this repository by submitting pull requests or opening issues.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please contact Oussama ELHADJI at [oussousselhadji@gmail.com](mailto:oussousselhadji@gmail.com).
+
+## Author
+
+- **Name**: Oussama ELHADJI
+- **School**: École Nationale de l'Intelligence Artificielle et du Digital Berkane
+- **Professor**: Mohamed Khalifa BOUTAHIR
+```
