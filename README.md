@@ -112,21 +112,35 @@ Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` env
 ```mermaid
 flowchart TB
     Init[1️⃣ Initialization]
-    Init --> A[Set Up Environment]
-    Init --> B[Initialize Q-Table]
+    A[Set Up Environment]
+    B[Initialize Q-Table]
+
+    Init --> A
+    Init --> B
 
     Training[2️⃣ Training]
-    Training --> C[Select Action]
-    Training --> D[Take Action]
-    Training --> E[Observe Reward]
-    Training --> F[Update Q-Table (Q-Learning)]
-    Training --> G[Update Q-Table (SARSA)]
+    C[Select Action]
+    D[Take Action]
+    E[Observe Reward]
+    F[Update Q-Table (Q-Learning)]
+    G[Update Q-Table (SARSA)]
+
+    Training --> C
+    Training --> D
+    Training --> E
+    Training --> F
+    Training --> G
 
     Evaluation[3️⃣ Evaluation]
-    Evaluation --> H[Test Trained Agent (Q-Learning)]
-    Evaluation --> I[Record Performance (Q-Learning)]
-    Evaluation --> J[Test Trained Agent (SARSA)]
-    Evaluation --> K[Record Performance (SARSA)]
+    H[Test Trained Agent (Q-Learning)]
+    I[Record Performance (Q-Learning)]
+    J[Test Trained Agent (SARSA)]
+    K[Record Performance (SARSA)]
+
+    Evaluation --> H
+    Evaluation --> I
+    Evaluation --> J
+    Evaluation --> K
 ```
 
 ### Results
@@ -149,18 +163,29 @@ Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `
 ```mermaid
 flowchart TB
     Init[1️⃣ Initialization]
-    Init --> A[Set Up Environment]
-    Init --> B[Initialize Policy and Value Tables]
+    A[Set Up Environment]
+    B[Initialize Policy and Value Tables]
+
+    Init --> A
+    Init --> B
 
     Training[2️⃣ Training]
-    Training --> C[Select Action]
-    Training --> D[Take Action]
-    Training --> E[Observe Reward]
-    Training --> F[Update Policy and Value Tables (PPO)]
+    C[Select Action]
+    D[Take Action]
+    E[Observe Reward]
+    F[Update Policy and Value Tables (PPO)]
+
+    Training --> C
+    Training --> D
+    Training --> E
+    Training --> F
 
     Evaluation[3️⃣ Evaluation]
-    Evaluation --> G[Test Trained Agent]
-    Evaluation --> H[Record Performance]
+    G[Test Trained Agent]
+    H[Record Performance]
+
+    Evaluation --> G
+    Evaluation --> H
 ```
 
 ### Video Demonstration
