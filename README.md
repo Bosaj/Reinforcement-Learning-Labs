@@ -24,6 +24,25 @@ The HomeWork section contains practice and introductory exercises for the Reinfo
 ### Description
 Introduction to reinforcement learning concepts using the `CartPole-v1` environment.
 
+### Workflow Overview
+
+```mermaid
+flowchart TB
+    subgraph Init["1️⃣ Initialization"]
+        A[Set Up Environment] --> B[Initialize Q-Table]
+    end
+
+    subgraph Training["2️⃣ Training"]
+        C[Select Action] --> D[Take Action]
+        D --> E[Observe Reward]
+        E --> F[Update Q-Table]
+    end
+
+    subgraph Evaluation["3️⃣ Evaluation"]
+        G[Test Trained Agent] --> H[Record Performance]
+    end
+```
+
 ### Video Demonstration
 <video controls>
   <source src="./TP1/CartPole-v1.mp4" type="video/mp4">
@@ -42,6 +61,25 @@ Introduction to reinforcement learning concepts using the `CartPole-v1` environm
 
 ### Description
 Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
+
+### Workflow Overview
+
+```mermaid
+flowchart TB
+    subgraph Init["1️⃣ Initialization"]
+        A[Set Up Environment] --> B[Initialize Q-Table]
+    end
+
+    subgraph Training["2️⃣ Training"]
+        C[Select Action] --> D[Take Action]
+        D --> E[Observe Reward]
+        E --> F[Update Q-Table]
+    end
+
+    subgraph Evaluation["3️⃣ Evaluation"]
+        G[Test Trained Agent] --> H[Record Performance]
+    end
+```
 
 ### Video Demonstration
 <video controls>
@@ -62,6 +100,27 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 ### Description
 Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment.
 
+### Workflow Overview
+
+```mermaid
+flowchart TB
+    subgraph Init["1️⃣ Initialization"]
+        A[Set Up Environment] --> B[Initialize Q-Table]
+    end
+
+    subgraph Training["2️⃣ Training"]
+        C[Select Action] --> D[Take Action]
+        D --> E[Observe Reward]
+        E --> F[Update Q-Table (Q-Learning)]
+        E --> G[Update Q-Table (SARSA)]
+    end
+
+    subgraph Evaluation["3️⃣ Evaluation"]
+        H[Test Trained Agent (Q-Learning)] --> I[Record Performance (Q-Learning)]
+        J[Test Trained Agent (SARSA)] --> K[Record Performance (SARSA)]
+    end
+```
+
 ### Results
 ![Q-Learning vs SARSA Results](./TP3/qlearning_vs_sarsa.png)
 
@@ -74,6 +133,25 @@ Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment
 
 ### Description
 Implementing the PPO algorithm to solve the `Taxi-v3` environment.
+
+### Workflow Overview
+
+```mermaid
+flowchart TB
+    subgraph Init["1️⃣ Initialization"]
+        A[Set Up Environment] --> B[Initialize Policy and Value Tables]
+    end
+
+    subgraph Training["2️⃣ Training"]
+        C[Select Action] --> D[Take Action]
+        D --> E[Observe Reward]
+        E --> F[Update Policy and Value Tables (PPO)]
+    end
+
+    subgraph Evaluation["3️⃣ Evaluation"]
+        G[Test Trained Agent] --> H[Record Performance]
+    end
+```
 
 ### Video Demonstration
 <video controls>
