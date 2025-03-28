@@ -25,10 +25,13 @@ The HomeWork section contains practice and introductory exercises for the Reinfo
 Introduction to reinforcement learning concepts using the `CartPole-v1` environment.
 
 ### Video Demonstration
-[![TP1 Video](./TP1/CartPole-v1.mp4)](./TP1/CartPole-v1.mp4)
+<video controls>
+  <source src="./TP1/CartPole-v1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-- **Graphs**: [Link to graphs](./TP1/CartPole.png)
+![CartPole Results](./TP1/CartPole.png)
 
 ### Files
 - [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
@@ -41,10 +44,13 @@ Introduction to reinforcement learning concepts using the `CartPole-v1` environm
 Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 
 ### Video Demonstration
-[![TP2 Video](./TP2/FrozenLake.mp4)](./TP2/FrozenLake.mp4)
+<video controls>
+  <source src="./TP2/FrozenLake.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-- **Graphs**: [Link to graphs](./TP2/FrozenLake.png)
+![FrozenLake Results](./TP2/FrozenLake.png)
 
 ### Files
 - [FrozenLake.mp4](./TP2/FrozenLake.mp4)
@@ -57,7 +63,7 @@ Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
 Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment.
 
 ### Results
-- **Graphs**: [Link to graphs](./TP3/qlearning_vs_sarsa.png)
+![Q-Learning vs SARSA Results](./TP3/qlearning_vs_sarsa.png)
 
 ### Files
 - [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
@@ -70,10 +76,13 @@ Comparing Q-Learning and SARSA algorithms to solve the `CartPole-v1` environment
 Implementing the PPO algorithm to solve the `Taxi-v3` environment.
 
 ### Video Demonstration
-[![TP4 Video](./TP4/Taxi-v3.mp4)](./TP4/Taxi-v3.mp4)
+<video controls>
+  <source src="./TP4/Taxi-v3.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Results
-- **Graphs**: [Link to graphs](./TP4/Taxi.png)
+![Taxi Results](./TP4/Taxi.png)
 
 ### Files
 - [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
