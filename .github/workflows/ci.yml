@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate notebooks & lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install nbformat flake8
+
+      - name: Validate notebook structural integrity
+        run: |
+          find . -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -print0 | \
+            xargs -0 -I{} python -c "
+          import sys, nbformat
+          path = sys.argv[1]
+          nb = nbformat.read(open(path, encoding='utf-8'), as_version=4)
+          nbformat.validate(nb)
+          print(f'OK: {path}')
+          " {}
+
+      - name: Lint Python scripts (flake8)
+        run: |
+          flake8 . --max-line-length=120 --extend-ignore=E203,W503 --exclude=.git,__pycache__,.github --exit-zero

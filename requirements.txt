@@ -1,0 +1,4 @@
+gymnasium>=0.29,<1.1
+numpy>=1.23,<2.2
+matplotlib>=3.6,<3.10
+pandas>=1.5,<2.3

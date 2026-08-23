@@ -1,227 +1,90 @@
-# Machine Learning 2 - Reinforcement Learning Labs and Homework
+# Reinforcement Learning Labs
 
-This repository contains the labs and homework assignments for the **Machine Learning 2** course, focusing on **Reinforcement Learning**. Each lab includes a Jupyter Notebook with detailed code, explanations, and results. Additionally, each lab has a video demonstration of the environment and the agent's performance.
+Labs and homework from the **Machine Learning 2 — Reinforcement Learning** course at ENIAD Berkane: tabular Q-learning, SARSA, and PPO applied to classic Gymnasium environments.
 
-## Table of Contents
+[![CI](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci.yml/badge.svg)](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange.svg)](https://jupyter.org/)
 
-1. [HomeWork](#homework)
-2. [TP1: CartPole-v1](#tp1-cartpole-v1)
-3. [TP2: FrozenLake-v1](#tp2-frozenlake-v1)
-4. [TP3: Q-Learning vs SARSA](#tp3-q-learning-vs-sarsa)
-5. [TP4: Taxi-v3](#tp4-taxi-v3)
+## Overview
 
-## HomeWork
+This repository collects the practical work (`TP1`–`TP4`) and homework exercises produced for the Reinforcement Learning module of the Machine Learning 2 course (Prof. Mohamed Khalifa Boutahir), each notebook implementing and evaluating a specific RL algorithm on a Gymnasium environment, with recorded video demonstrations and result plots.
 
-### Description
-The HomeWork section contains practice and introductory exercises for the Reinforcement Learning course. These exercises are designed to familiarize students with classic RL concepts using Python.
+## Contents
 
-### Files
-- [HomeWork.py](./HomeWork/HomeWork.py)
-- [HomeWorkAnimation.py](./HomeWork/HomeWorkAnimation.py)
+| Lab | Environment | Algorithm | Notebook |
+| --- | --- | --- | --- |
+| HomeWork | Custom grid world (treasure/trap) | Random policy + tabular Q-learning (with terminal animation) | [`HomeWork/HomeWork.py`](HomeWork/HomeWork.py), [`HomeWork/HomeWorkAnimation.py`](HomeWork/HomeWorkAnimation.py) |
+| TP1 | `CartPole-v1` | Introduction to RL / Q-table basics | [`TP1/TP1.ipynb`](TP1/TP1.ipynb) |
+| TP2 | `FrozenLake-v1` | Q-learning | [`TP2/TP2.ipynb`](TP2/TP2.ipynb) |
+| TP3 | Custom traffic-light simulation | Q-learning vs. SARSA comparison | [`TP3/TP3.ipynb`](TP3/TP3.ipynb), [`TP3/traffic_env.py`](TP3/traffic_env.py) |
+| TP4 | `Taxi-v3` | PPO (Proximal Policy Optimization) | [`TP4/TP4.ipynb`](TP4/TP4.ipynb) |
 
----
+Each `TPx` folder also includes a demo video (`.mp4`) and result screenshot (`.png`) of the trained agent.
 
-## TP1: CartPole-v1
+## Tech Stack
 
-### Description
-Introduction to reinforcement learning concepts using the `CartPole-v1` environment.
+- **Python 3.10+**
+- [Gymnasium](https://gymnasium.farama.org/) — RL environments (`CartPole-v1`, `FrozenLake-v1`, `Taxi-v3`)
+- **NumPy** — Q-table storage and numerical operations
+- **Matplotlib** — training curves and result plots
+- **pandas** — data handling in TP3
+- Jupyter Notebook
 
-### Workflow Overview
+## Getting Started
 
-```mermaid
-flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A["Set Up Environment"] --> B["Initialize Q-Table"]
-    end
+```bash
+# 1. Clone the repository
+git clone https://github.com/Bosaj/Reinforcement-Learning-Labs.git
+cd Reinforcement-Learning-Labs
 
-    subgraph Training["2️⃣ Training"]
-        C["Select Action"] --> D["Take Action"]
-        D --> E["Observe Reward"]
-        E --> F["Update Q-Table"]
-    end
+# 2. Create a virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
 
-    subgraph Evaluation["3️⃣ Evaluation"]
-        G["Test Trained Agent"] --> H["Record Performance"]
-    end
+# 3. Install dependencies
+pip install -r requirements.txt
+pip install jupyter
+
+# 4. Launch Jupyter and open any TPx/TPx.ipynb notebook
+jupyter notebook
 ```
 
-### Video Demonstration
-<video controls>
-  <source src="./TP1/CartPole-v1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+The `HomeWork` scripts are plain Python and can be run directly, e.g. `python HomeWork/HomeWork.py`.
 
-### Results
-![CartPole Results](./TP1/CartPole.png)
+## Testing / CI
 
-### Files
-- [CartPole-v1.mp4](./TP1/CartPole-v1.mp4)
-- [CartPole.png](./TP1/CartPole.png)
-- [TP1.ipynb](./TP1/TP1.ipynb)
+A GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push/PR to `main`:
 
----
+- Installs dependencies from `requirements.txt`
+- Validates that every `.ipynb` file is structurally well-formed (via `nbformat`)
+- Lints the `.py` scripts with `flake8` (non-blocking, style feedback only)
 
-## TP2: FrozenLake-v1
+This does not execute full agent training (no GPU / long-running training in CI) — it guards against broken notebooks and import errors.
 
-### Description
-Implementing the Q-learning algorithm to solve the `FrozenLake-v1` environment.
+## Project Structure
 
-### Workflow Overview
-
-```mermaid
-flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A["Set Up Environment"] --> B["Initialize Q-Table"]
-    end
-
-    subgraph Training["2️⃣ Training"]
-        C["Select Action"] --> D["Take Action"]
-        D --> E["Observe Reward"]
-        E --> F["Update Q-Table"]
-    end
-
-    subgraph Evaluation["3️⃣ Evaluation"]
-        G["Test Trained Agent"] --> H["Record Performance"]
-    end
+```
+Reinforcement-Learning-Labs/
+├── HomeWork/           # Introductory grid-world exercises
+├── TP1/                # CartPole-v1
+├── TP2/                # FrozenLake-v1
+├── TP3/                # Q-learning vs SARSA (traffic simulation)
+├── TP4/                # Taxi-v3 (PPO)
+├── requirements.txt
+└── .github/workflows/ci.yml
 ```
 
-### Video Demonstration
-<video controls>
-  <source src="./TP2/FrozenLake.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+## Changelog
 
-### Results
-![FrozenLake Results](./TP2/FrozenLake.png)
-
-### Files
-- [FrozenLake.mp4](./TP2/FrozenLake.mp4)
-- [FrozenLake.png](./TP2/FrozenLake.png)
-- [TP2.ipynb](./TP2/TP2.ipynb)
-
----
-
-## TP3: Q-Learning vs SARSA
-
-### Description
-Comparing **Q-Learning** and **SARSA** algorithms to solve the `CartPole-v1` environment.
-
-### Workflow Overview
-
-```mermaid
-flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A["Set Up Environment"]
-        B["Initialize Q-Table"]
-    end
-
-    subgraph Training["2️⃣ Training"]
-        C["Select Action"]
-        D["Take Action"]
-        E["Observe Reward"]
-        F["Update Q-Table (Q-Learning)"]
-        G["Update Q-Table (SARSA)"]
-    end
-
-    subgraph Evaluation["3️⃣ Evaluation"]
-        H["Test Trained Agent (Q-Learning)"]
-        I["Record Performance (Q-Learning)"]
-        J["Test Trained Agent (SARSA)"]
-        K["Record Performance (SARSA)"]
-    end
-```
-
-### Results
-![Q-Learning vs SARSA Results](./TP3/qlearning_vs_sarsa.png)
-
-### Files
-- [qlearning_vs_sarsa.png](./TP3/qlearning_vs_sarsa.png)
-- [TP3.ipynb](./TP3/TP3.ipynb)
-- [traffic_env.py](./TP3/traffic_env.py)
-
----
-
-## TP4: Taxi-v3
-
-### Description
-Implementing the **PPO** (Proximal Policy Optimization) algorithm to solve the `Taxi-v3` environment.
-
-### Workflow Overview
-
-```mermaid
-flowchart TB
-    subgraph Init["1️⃣ Initialization"]
-        A["Set Up Environment"]
-        B["Initialize Policy and Value Tables"]
-    end
-
-    subgraph Training["2️⃣ Training"]
-        C["Select Action"]
-        D["Take Action"]
-        E["Observe Reward"]
-        F["Update Policy and Value Tables (PPO)"]
-    end
-
-    subgraph Evaluation["3️⃣ Evaluation"]
-        G["Test Trained Agent"]
-        H["Record Performance"]
-    end
-```
-
-### Video Demonstration
-<video controls>
-  <source src="./TP4/Taxi-v3.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-### Results
-![Taxi Results](./TP4/Taxi.png)
-
-### Files
-- [Taxi-v3.mp4](./TP4/Taxi-v3.mp4)
-- [Taxi.png](./TP4/Taxi.png)
-- [TP4.ipynb](./TP4/TP4.ipynb)
-
----
-
-## Usage
-
-To run the labs and homework, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   ```
-
-2. Install the required dependencies:
-   ```bash
-   pip install gymnasium numpy matplotlib
-   ```
-
-3. Open the Jupyter Notebook for each lab and run the cells.
-
----
-
-## Contributing
-
-Feel free to contribute to this repository by submitting pull requests or opening issues.
-
----
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
-
----
-
-## Contact
-
-For any questions or feedback, please contact Oussama ELHADJI at [oussousselhadji@gmail.com](mailto:oussousselhadji@gmail.com).
-
----
+Distributed under the MIT License — see [LICENSE.txt](LICENSE.txt).
 
 ## Author
 
-- **Name**: Oussama ELHADJI
-- **School**: École Nationale de l'Intelligence Artificielle et du Digital Berkane
-- **Professor**: Mohamed Khalifa BOUTAHIR
+**Oussama EL HADJI** — [github.com/Bosaj](https://github.com/Bosaj)
+Final-year student, École Nationale de l'Intelligence Artificielle et du Digital (ENIAD), Berkane.
