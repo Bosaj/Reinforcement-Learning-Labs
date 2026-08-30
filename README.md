@@ -1,4 +1,10 @@
-# Reinforcement Learning Labs
+# Reinforcement-Learning-Labs
+
+![CI Pipeline](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci_qa_monitoring.yml/badge.svg)
+[![GitHub Wiki](https://img.shields.io/badge/Documentation-GitHub%20Wiki-blue.svg)](https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki)
+[![Quality Gate](https://img.shields.io/badge/Quality%20Gate-Passed-brightgreen.svg)](docs/MONITORING_AND_QA.md)
+
+---
 
 Labs and homework from the **Machine Learning 2 — Reinforcement Learning** course at ENIAD Berkane: tabular Q-learning, SARSA, and PPO applied to classic Gymnasium environments.
 
@@ -97,4 +103,12 @@ This project includes a standardized 4-Pillar Observability and QA framework:
 - **Health Controlling & Evaluation**: Liveness/readiness controllers in `monitoring/health.py` and evaluation harness in `scripts/eval_harness.py`.
 - **QA & Testing**: Automated Pytest/Vitest integration and CI workflows via `.github/workflows/ci_qa_monitoring.yml`.
 
-For complete instructions, architecture details, and commands, see [docs/MONITORING_AND_QA.md](file:///C:\Users\ROG FLOW\Desktop\Projects\Github_Projects\Reinforcement-Learning-Labs\docs\MONITORING_AND_QA.md).
+For complete instructions, architecture details, and commands, see [docs/MONITORING_AND_QA.md](docs/MONITORING_AND_QA.md).
+
+---
+
+## 📚 Documentation & GitHub Wiki
+- 📖 **Official Project Wiki**: [https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki](https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki)
+- 🔍 **Architecture & Design**: [https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki/Architecture-and-Design](https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki/Architecture-and-Design)
+- 🚀 **Getting Started Guide**: [https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki/Getting-Started](https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki/Getting-Started)
+- 📊 **Monitoring & Observability**: [docs/MONITORING_AND_QA.md](docs/MONITORING_AND_QA.md)
