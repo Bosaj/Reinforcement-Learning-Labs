@@ -1,5 +1,9 @@
 # Reinforcement-Learning-Labs
 
+<p align="center">
+  <img src="assets/social_preview.png" alt="Reinforcement-Learning-Labs Banner" width="100%">
+</p>
+
 ![CI Pipeline](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci_qa_monitoring.yml/badge.svg)
 [![GitHub Wiki](https://img.shields.io/badge/Documentation-GitHub%20Wiki-blue.svg)](https://github.com/Bosaj/Reinforcement-Learning-Labs/wiki)
 [![Quality Gate](https://img.shields.io/badge/Quality%20Gate-Passed-brightgreen.svg)](docs/MONITORING_AND_QA.md)
