@@ -15,7 +15,6 @@
 
 Labs and homework from the **Machine Learning 2 — Reinforcement Learning** course at ENIAD Berkane: tabular Q-learning, SARSA, and PPO applied to classic Gymnasium environments.
 
-[![CI](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci.yml/badge.svg)](https://github.com/Bosaj/Reinforcement-Learning-Labs/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange.svg)](https://jupyter.org/)
