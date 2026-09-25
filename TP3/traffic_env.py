@@ -11,11 +11,15 @@ class TrafficEnvironment:
             self.current_light = 1 - self.current_light  # Switch traffic lights
 
         if self.current_light == 0:  # NS Green, EW Red
-            passed = min(self.state[0], np.random.randint(1, 5)) + min(self.state[1], np.random.randint(1, 5))
+            passed = min(self.state[0], np.random.randint(1, 5)) + min(
+                self.state[1], np.random.randint(1, 5)
+            )
             self.state[0] = max(0, self.state[0] - passed)
             self.state[1] = max(0, self.state[1] - passed)
         else:  # EW Green, NS Red
-            passed = min(self.state[2], np.random.randint(1, 5)) + min(self.state[3], np.random.randint(1, 5))
+            passed = min(self.state[2], np.random.randint(1, 5)) + min(
+                self.state[3], np.random.randint(1, 5)
+            )
             self.state[2] = max(0, self.state[2] - passed)
             self.state[3] = max(0, self.state[3] - passed)
 
