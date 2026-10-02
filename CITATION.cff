@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Reinforcement Learning Labs"
+abstract: "Reinforcement learning labs (Q-learning, SARSA, PPO) on Gymnasium environments â€” Machine Learning 2 course, ENIAD Berkane"
+authors:
+  - family-names: "Oussous"
+    given-names: "El Hadji"
+    alias: "Bosaj"
+    email: "oussousselhadji@gmail.com"
+repository-code: "https://github.com/Bosaj/Reinforcement-Learning-Labs"
+url: "https://github.com/Bosaj/Reinforcement-Learning-Labs"
+date-released: 2026-10-02
+license: "GPL-3.0-or-later"
+keywords:
+  - "ai"
+  - "software-engineering"
+  - "bosaj"
