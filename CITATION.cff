@@ -3,8 +3,8 @@ message: "If you use this software, please cite it using the metadata from this 
 title: "Reinforcement Learning Labs"
 abstract: "Reinforcement learning labs (Q-learning, SARSA, PPO) on Gymnasium environments â€” Machine Learning 2 course, ENIAD Berkane"
 authors:
-  - family-names: "Oussous"
-    given-names: "El Hadji"
+  - family-names: "EL HADJI"
+    given-names: "Oussama"
     alias: "Bosaj"
     email: "oussousselhadji@gmail.com"
 repository-code: "https://github.com/Bosaj/Reinforcement-Learning-Labs"
