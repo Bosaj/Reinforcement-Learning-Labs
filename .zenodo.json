@@ -1,0 +1,20 @@
+{
+  "title": "Reinforcement Learning Labs: Reinforcement learning labs (Q-learning, SARSA, PPO) on Gymnasium environments \u00e2\u20ac\u201d Machine Learning 2 course, ENIAD Berkane",
+  "description": "<p>Reinforcement learning labs (Q-learning, SARSA, PPO) on Gymnasium environments \u00e2\u20ac\u201d Machine Learning 2 course, ENIAD Berkane</p><p>Authored and maintained by Bosaj (El Hadji Oussous).</p>",
+  "creators": [
+    {
+      "name": "Oussous, El Hadji",
+      "affiliation": "Software Engineer & AI Researcher",
+      "orcid": ""
+    }
+  ],
+  "access_right": "open",
+  "license": "GPL-3.0-or-later",
+  "upload_type": "software",
+  "keywords": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Software Engineering",
+    "Bosaj"
+  ]
+}
